@@ -1,15 +1,15 @@
 import React from 'react';
 
-const ProductCard = ({ product }) => {
+const ProductsCard = ({ products }) => {
   return (
-    <div className="product-card">
+    <div className="products-card">
       <img src={`https://picsum.photos/200/300?random=${product.id}`} alt={product.name} />
-      <h2>{product.name}</h2>
-      <p>Company: {product.company}</p>
-      <p>Rating: {product.rating}</p>
-      <p>Price: ${product.price}</p>
-      <p>Discount: {product.discount}%</p>
-      <p>Availability: {product.availability ? 'In Stock' : 'Out of Stock'}</p>
+      <h2>{products.name}</h2>
+      <p>Company: {products.companies}</p>
+      <p>Rating: {products.rating}</p>
+      <p>Price: ${products.price}</p>
+      <p>Discount: {product.discounts}%</p>
+      <p>Availability: {products.availability ? 'In Stock' : 'Out of Stock'}</p>
     </div>
   );
 };
